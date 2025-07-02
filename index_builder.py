@@ -3,7 +3,7 @@ from pathlib import Path
 from html import escape
 import sys
 import re
-
+import shutil
 
 if len(sys.argv)>1:
     path_dir = sys.argv[1]
@@ -96,3 +96,5 @@ def create_html_index(course_root: Path):
 
 if __name__ == "__main__":
     create_html_index(COURSE_ROOT)
+    shutil.copy('./styles.css',os.path.join(COURSE_ROOT, './styles.css'))
+    shutil.copy('./script.js',os.path.join(COURSE_ROOT, './styles.js'))
