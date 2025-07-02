@@ -1,0 +1,168 @@
+/* ---------- Base Layout ---------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #222;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.layout {
+  display: flex;
+  gap: 1rem;
+}
+
+.file-tree {
+  flex: 1;
+  max-width: 40%;
+  overflow-y: auto;
+}
+
+.player-area {
+  flex: 1;
+  max-width: 60%;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------- Typography ---------- */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #7c6a02;
+  margin-bottom: 2rem;
+}
+
+h2, h3, h4 {
+  color: #007acc;
+  margin-top: 0;
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #007acc;
+  background: #f4faff;
+  border-radius: 0.5rem;
+}
+
+section.collapsible > h2,
+section.collapsible > h3,
+section.collapsible > h4 {
+  cursor: pointer;
+  user-select: none;
+}
+
+section.collapsible > .content {
+  display: none;
+}
+
+section.collapsible.open > .content {
+  display: block;
+}
+
+/* ---------- Links & Lists ---------- */
+ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #003e80;
+}
+
+li::before {
+  margin-right: 0.5rem;
+}
+
+/* ---------- UI Elements ---------- */
+#darkModeToggle {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#searchBar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+}
+
+/* ---------- Video Player ---------- */
+.player-container video {
+  width: 100%;
+  max-height: 80vh;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #f55;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* ---------- Dark Mode ---------- */
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark section {
+  background: #1e1e1e;
+  border-left-color: #90caf9;
+}
+
+body.dark a {
+  color: #90caf9;
+}
+
+body.dark .player-area {
+  background: #1a1a1a;
+}
+
+body.dark .player-header {
+  color: #fff;
+}
+
+body.dark .close-btn {
+  color: #f55;
+}
