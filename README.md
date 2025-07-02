@@ -25,9 +25,8 @@ This will:
     index.html – Main file for browsing content
 
 Uses:
-
-  styles.css – For styling (dark mode, layout)
-  script.js – For search functionality and theme toggle
+  1. styles.css – For styling (dark mode, layout)
+  2. script.js – For search functionality and theme toggle
 
 Open index.html in any browser to explore the course contents.
 
