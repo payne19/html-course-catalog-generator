@@ -14,13 +14,12 @@ Features
 
 6. Dark mode toggle and search bar included (requires accompanying styles.css and script.js)
 
-Usage
-python generate_index.py "/path/to/your/course/folder"
-This will:
+## Usage
+### python generate_index.py "/path/to/your/course/folder"
 
+This will:
   Sanitize names inside the specified folder
   Create a index.html file in the root of the directory
-
   Output
     index.html – Main file for browsing content
 
